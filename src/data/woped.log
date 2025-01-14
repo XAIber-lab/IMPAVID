@@ -1,0 +1,510 @@
+[2022-10-04 17:52:29,670] 0  INFO GUI_LOGGER: INIT APPLICATION
+[2022-10-04 17:52:29,689] 19  INFO CORE_LOGGER: START INIT Application
+[2022-10-04 17:52:29,693] 23  INFO CONFIG_LOGGER: Setting default home directory: C:\Users\palma\.WoPeD-3.8.0\nets\
+[2022-10-04 17:52:29,693] 23  INFO CONFIG_LOGGER: Loading configuration from: C:\Users\palma\.WoPeD-3.8.0\WoPeDconfig.xml.
+[2022-10-04 17:52:29,802] 132  INFO CONFIG_LOGGER: Setting Locale to en_US
+[2022-10-04 17:52:29,804] 134  INFO CONFIG_LOGGER: Setting home directory: C:\Users\palma\.WoPeD-3.8.0\nets\
+[2022-10-04 17:52:29,805] 135  INFO CONFIG_LOGGER: Setting current working directory: C:\Users\palma\Desktop\dataset\sepsis
+[2022-10-04 17:52:29,814] 144  INFO CONFIG_LOGGER: Configuration successfully loaded.
+[2022-10-04 17:52:29,819] 149  WARN CONFIG_LOGGER: Configuration file not found: C:\Users\palma\.WoPeD-3.8.0\WoPeDmetrics.xml. Using built-in settings.
+[2022-10-04 17:52:29,833] 163  INFO CONFIG_LOGGER: Configuration successfully loaded.
+[2022-10-04 17:52:29,854] 184  INFO CORE_LOGGER: Look-And-Feel set to com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+[2022-10-04 17:52:30,078] 408  INFO GUI_LOGGER: END  INIT Application
+[2022-10-04 17:52:30,121] 451 DEBUG TRANSLATIONS_LOGGER: Resource not found: Apromore.UI.TextBand.Import.text
+[2022-10-04 17:52:30,121] 451 DEBUG TRANSLATIONS_LOGGER: Resource not found: Apromore.UI.TextBand.Import.tooltip
+[2022-10-04 17:52:30,122] 452 DEBUG TRANSLATIONS_LOGGER: Resource not found: Apromore.UI.TextBand.Export.text
+[2022-10-04 17:52:30,122] 452 DEBUG TRANSLATIONS_LOGGER: Resource not found: Apromore.UI.TextBand.Export.tooltip
+[2022-10-04 17:52:30,225] 555 DEBUG QUALANALYSIS_LOGGER: -> init() org.woped.qualanalysis.coverabilitygraph.gui.CoverabilityGraphFrameController
+[2022-10-04 17:52:30,232] 562 DEBUG QUALANALYSIS_LOGGER: <- init() org.woped.qualanalysis.coverabilitygraph.gui.CoverabilityGraphFrameController
+[2022-10-04 17:52:30,256] 586 DEBUG FILE_LOGGER: ##### START PNML Version (1.3.2) IMPORT #####
+[2022-10-04 17:52:30,387] 717 DEBUG QUALANALYSIS_LOGGER: PT Handle Pairs calculated. (0 ms)
+[2022-10-04 17:52:30,387] 717 DEBUG QUALANALYSIS_LOGGER: TP Handle Pairs calculated. (6 ms)
+[2022-10-04 17:52:30,513] 843 DEBUG FILE_LOGGER:  ... Place (ID:p1) imported
+[2022-10-04 17:52:30,513] 843 DEBUG FILE_LOGGER:  ... Place (ID:p2) imported
+[2022-10-04 17:52:30,513] 843 DEBUG FILE_LOGGER:  ... Place (ID:p3) imported
+[2022-10-04 17:52:30,513] 843 DEBUG FILE_LOGGER:  ... Place (ID:p5) imported
+[2022-10-04 17:52:30,513] 843 DEBUG FILE_LOGGER:  ... Place (ID:p6) imported
+[2022-10-04 17:52:30,514] 844 DEBUG FILE_LOGGER:  ... Place (ID:p7) imported
+[2022-10-04 17:52:30,514] 844 DEBUG FILE_LOGGER:  ... Place (ID:p9) imported
+[2022-10-04 17:52:30,514] 844 DEBUG FILE_LOGGER:  ... Place (ID:p10) imported
+[2022-10-04 17:52:30,514] 844 DEBUG FILE_LOGGER:  ... Place (ID:p11) imported
+[2022-10-04 17:52:30,514] 844 DEBUG FILE_LOGGER:  ... Place (ID:p13) imported
+[2022-10-04 17:52:30,515] 845 DEBUG FILE_LOGGER:  ... Place (ID:p15) imported
+[2022-10-04 17:52:30,519] 849 DEBUG FILE_LOGGER:  ... Transition (ID:t4) imported 
+[2022-10-04 17:52:30,520] 850 DEBUG FILE_LOGGER:  ... Transition (ID:t6) imported 
+[2022-10-04 17:52:30,522] 852 DEBUG FILE_LOGGER:  ... Transition (ID:t7) imported 
+[2022-10-04 17:52:30,522] 852 DEBUG FILE_LOGGER:  ... Transition (ID:t9) imported 
+[2022-10-04 17:52:30,522] 852 DEBUG FILE_LOGGER:  ... Transition (ID:t10) imported 
+[2022-10-04 17:52:30,522] 852 DEBUG FILE_LOGGER:  ... Transition (ID:t13) imported 
+[2022-10-04 17:52:30,522] 852 DEBUG FILE_LOGGER:  ... Transition (ID:t1) imported 
+[2022-10-04 17:52:30,523] 853 DEBUG FILE_LOGGER:  ... Transition (ID:t3) imported 
+[2022-10-04 17:52:30,529] 859 DEBUG FILE_LOGGER:  ... Arc created: (ID:a261) p1 -> t1 
+[2022-10-04 17:52:30,529] 859 DEBUG FILE_LOGGER:  ... Arc created: (ID:a262) t1 -> p2 
+[2022-10-04 17:52:30,529] 859 DEBUG FILE_LOGGER:  ... Arc created: (ID:a273) p11 -> t13 
+[2022-10-04 17:52:30,529] 859 DEBUG FILE_LOGGER:  ... Arc created: (ID:a286) t13 -> p13 
+[2022-10-04 17:52:30,530] 860 DEBUG FILE_LOGGER:  ... Arc created: (ID:a270) p10 -> t10 
+[2022-10-04 17:52:30,530] 860 DEBUG FILE_LOGGER:  ... Arc created: (ID:a271) p9 -> t9 
+[2022-10-04 17:52:30,530] 860 DEBUG FILE_LOGGER:  ... Arc created: (ID:a3) p3 -> t3 
+[2022-10-04 17:52:30,530] 860 DEBUG FILE_LOGGER:  ... Arc created: (ID:a7) t3 -> p5 
+[2022-10-04 17:52:30,530] 860 DEBUG FILE_LOGGER:  ... Arc created: (ID:a269) t9 -> p10 
+[2022-10-04 17:52:30,531] 861 DEBUG FILE_LOGGER:  ... Arc created: (ID:a287) t10 -> p15 
+[2022-10-04 17:52:30,531] 861 DEBUG FILE_LOGGER:  ... Arc created: (ID:a266) p6 -> t7 
+[2022-10-04 17:52:30,531] 861 DEBUG FILE_LOGGER:  ... Arc created: (ID:a267) t7 -> p7 
+[2022-10-04 17:52:30,531] 861 DEBUG FILE_LOGGER:  ... Arc created: (ID:a265) t6 -> p6 
+[2022-10-04 17:52:30,533] 863 DEBUG FILE_LOGGER:  ... Arc created: (ID:a291) p13 -> t6 
+[2022-10-04 17:52:30,533] 863 DEBUG FILE_LOGGER:  ... Arc created: (ID:a4) p5 -> t6 
+[2022-10-04 17:52:30,534] 864 DEBUG FILE_LOGGER:  ... Arc created: (ID:a8) t6 -> p6 
+[2022-10-04 17:52:30,535] 865 DEBUG FILE_LOGGER:  ... Arc created: (ID:a11) t6 -> p6 
+[2022-10-04 17:52:30,535] 865 DEBUG FILE_LOGGER:  ... Arc created: (ID:a288) p15 -> t6 
+[2022-10-04 17:52:30,535] 865 DEBUG FILE_LOGGER:  ... Arc created: (ID:a263) p2 -> t4 
+[2022-10-04 17:52:30,535] 865 DEBUG FILE_LOGGER:  ... Arc created: (ID:a17) p2 -> t4 
+[2022-10-04 17:52:30,536] 866 DEBUG FILE_LOGGER:  ... Arc created: (ID:a281) t4 -> p9 
+[2022-10-04 17:52:30,536] 866 DEBUG FILE_LOGGER:  ... Arc created: (ID:a276) t4 -> p11 
+[2022-10-04 17:52:30,536] 866 DEBUG FILE_LOGGER:  ... Arc created: (ID:a22) p2 -> t4 
+[2022-10-04 17:52:30,536] 866 DEBUG FILE_LOGGER:  ... Arc created: (ID:a278) t4 -> p3 
+[2022-10-04 17:52:30,611] 941 DEBUG EDITOR_LOGGER: Net updated. (3 ms)
+[2022-10-04 17:52:30,614] 944 DEBUG EDITOR_LOGGER: Net updated. (2 ms)
+[2022-10-04 17:52:30,614] 944 DEBUG FILE_LOGGER: ##### END PNML IMPORT Version (1.3.2) ##### (358 ms)
+[2022-10-04 17:52:30,616] 946  INFO CONFIG_LOGGER: Setting current working directory: C:\Users\palma\Documents\projects\va_incident_mng\exploration\src\data
+[2022-10-04 17:52:30,616] 946  INFO FILE_LOGGER: Petrinet loaded from file: C:\Users\palma\Documents\projects\va_incident_mng\exploration\src\data\simple_model.pnml
+[2022-10-04 17:52:49,464] 19794  INFO CONFIG_LOGGER: Configuration successfully saved to: C:\Users\palma\.WoPeD-3.8.0\WoPeDconfig.xml
+[2022-10-04 17:52:49,464] 19794  INFO GUI_LOGGER: EXIT WoPeD
+[2022-10-06 16:13:13,527] 0  INFO GUI_LOGGER: INIT APPLICATION
+[2022-10-06 16:13:13,544] 17  INFO CORE_LOGGER: START INIT Application
+[2022-10-06 16:13:13,548] 21  INFO CONFIG_LOGGER: Setting default home directory: C:\Users\palma\.WoPeD-3.8.0\nets\
+[2022-10-06 16:13:13,549] 22  INFO CONFIG_LOGGER: Loading configuration from: C:\Users\palma\.WoPeD-3.8.0\WoPeDconfig.xml.
+[2022-10-06 16:13:13,642] 115  INFO CONFIG_LOGGER: Setting Locale to en_US
+[2022-10-06 16:13:13,644] 117  INFO CONFIG_LOGGER: Setting home directory: C:\Users\palma\.WoPeD-3.8.0\nets\
+[2022-10-06 16:13:13,644] 117  INFO CONFIG_LOGGER: Setting current working directory: C:\Users\palma\Desktop\dataset\sepsis
+[2022-10-06 16:13:13,652] 125  INFO CONFIG_LOGGER: Configuration successfully loaded.
+[2022-10-06 16:13:13,657] 130  WARN CONFIG_LOGGER: Configuration file not found: C:\Users\palma\.WoPeD-3.8.0\WoPeDmetrics.xml. Using built-in settings.
+[2022-10-06 16:13:13,669] 142  INFO CONFIG_LOGGER: Configuration successfully loaded.
+[2022-10-06 16:13:13,686] 159  INFO CORE_LOGGER: Look-And-Feel set to com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+[2022-10-06 16:13:13,882] 355  INFO GUI_LOGGER: END  INIT Application
+[2022-10-06 16:13:13,921] 394 DEBUG TRANSLATIONS_LOGGER: Resource not found: Apromore.UI.TextBand.Import.text
+[2022-10-06 16:13:13,921] 394 DEBUG TRANSLATIONS_LOGGER: Resource not found: Apromore.UI.TextBand.Import.tooltip
+[2022-10-06 16:13:13,922] 395 DEBUG TRANSLATIONS_LOGGER: Resource not found: Apromore.UI.TextBand.Export.text
+[2022-10-06 16:13:13,922] 395 DEBUG TRANSLATIONS_LOGGER: Resource not found: Apromore.UI.TextBand.Export.tooltip
+[2022-10-06 16:13:14,006] 479 DEBUG QUALANALYSIS_LOGGER: -> init() org.woped.qualanalysis.coverabilitygraph.gui.CoverabilityGraphFrameController
+[2022-10-06 16:13:14,012] 485 DEBUG QUALANALYSIS_LOGGER: <- init() org.woped.qualanalysis.coverabilitygraph.gui.CoverabilityGraphFrameController
+[2022-10-06 16:13:14,033] 506 DEBUG FILE_LOGGER: ##### START PNML Version (1.3.2) IMPORT #####
+[2022-10-06 16:13:14,169] 642 DEBUG QUALANALYSIS_LOGGER: PT Handle Pairs calculated. (0 ms)
+[2022-10-06 16:13:14,170] 643 DEBUG QUALANALYSIS_LOGGER: TP Handle Pairs calculated. (6 ms)
+[2022-10-06 16:13:14,291] 764 DEBUG FILE_LOGGER:  ... Place (ID:p1) imported
+[2022-10-06 16:13:14,292] 765 DEBUG FILE_LOGGER:  ... Place (ID:p2) imported
+[2022-10-06 16:13:14,292] 765 DEBUG FILE_LOGGER:  ... Place (ID:p3) imported
+[2022-10-06 16:13:14,292] 765 DEBUG FILE_LOGGER:  ... Place (ID:p5) imported
+[2022-10-06 16:13:14,292] 765 DEBUG FILE_LOGGER:  ... Place (ID:p6) imported
+[2022-10-06 16:13:14,292] 765 DEBUG FILE_LOGGER:  ... Place (ID:p7) imported
+[2022-10-06 16:13:14,293] 766 DEBUG FILE_LOGGER:  ... Place (ID:p9) imported
+[2022-10-06 16:13:14,293] 766 DEBUG FILE_LOGGER:  ... Place (ID:p10) imported
+[2022-10-06 16:13:14,293] 766 DEBUG FILE_LOGGER:  ... Place (ID:p11) imported
+[2022-10-06 16:13:14,293] 766 DEBUG FILE_LOGGER:  ... Place (ID:p13) imported
+[2022-10-06 16:13:14,294] 767 DEBUG FILE_LOGGER:  ... Place (ID:p15) imported
+[2022-10-06 16:13:14,297] 770 DEBUG FILE_LOGGER:  ... Transition (ID:t4) imported 
+[2022-10-06 16:13:14,298] 771 DEBUG FILE_LOGGER:  ... Transition (ID:t6) imported 
+[2022-10-06 16:13:14,299] 772 DEBUG FILE_LOGGER:  ... Transition (ID:t7) imported 
+[2022-10-06 16:13:14,299] 772 DEBUG FILE_LOGGER:  ... Transition (ID:t9) imported 
+[2022-10-06 16:13:14,299] 772 DEBUG FILE_LOGGER:  ... Transition (ID:t10) imported 
+[2022-10-06 16:13:14,299] 772 DEBUG FILE_LOGGER:  ... Transition (ID:t13) imported 
+[2022-10-06 16:13:14,300] 773 DEBUG FILE_LOGGER:  ... Transition (ID:t1) imported 
+[2022-10-06 16:13:14,300] 773 DEBUG FILE_LOGGER:  ... Transition (ID:t3) imported 
+[2022-10-06 16:13:14,305] 778 DEBUG FILE_LOGGER:  ... Arc created: (ID:a261) p1 -> t1 
+[2022-10-06 16:13:14,305] 778 DEBUG FILE_LOGGER:  ... Arc created: (ID:a262) t1 -> p2 
+[2022-10-06 16:13:14,305] 778 DEBUG FILE_LOGGER:  ... Arc created: (ID:a273) p11 -> t13 
+[2022-10-06 16:13:14,305] 778 DEBUG FILE_LOGGER:  ... Arc created: (ID:a286) t13 -> p13 
+[2022-10-06 16:13:14,305] 778 DEBUG FILE_LOGGER:  ... Arc created: (ID:a270) p10 -> t10 
+[2022-10-06 16:13:14,305] 778 DEBUG FILE_LOGGER:  ... Arc created: (ID:a271) p9 -> t9 
+[2022-10-06 16:13:14,306] 779 DEBUG FILE_LOGGER:  ... Arc created: (ID:a3) p3 -> t3 
+[2022-10-06 16:13:14,306] 779 DEBUG FILE_LOGGER:  ... Arc created: (ID:a7) t3 -> p5 
+[2022-10-06 16:13:14,306] 779 DEBUG FILE_LOGGER:  ... Arc created: (ID:a269) t9 -> p10 
+[2022-10-06 16:13:14,306] 779 DEBUG FILE_LOGGER:  ... Arc created: (ID:a287) t10 -> p15 
+[2022-10-06 16:13:14,306] 779 DEBUG FILE_LOGGER:  ... Arc created: (ID:a266) p6 -> t7 
+[2022-10-06 16:13:14,306] 779 DEBUG FILE_LOGGER:  ... Arc created: (ID:a267) t7 -> p7 
+[2022-10-06 16:13:14,307] 780 DEBUG FILE_LOGGER:  ... Arc created: (ID:a265) t6 -> p6 
+[2022-10-06 16:13:14,308] 781 DEBUG FILE_LOGGER:  ... Arc created: (ID:a291) p13 -> t6 
+[2022-10-06 16:13:14,308] 781 DEBUG FILE_LOGGER:  ... Arc created: (ID:a4) p5 -> t6 
+[2022-10-06 16:13:14,309] 782 DEBUG FILE_LOGGER:  ... Arc created: (ID:a8) t6 -> p6 
+[2022-10-06 16:13:14,309] 782 DEBUG FILE_LOGGER:  ... Arc created: (ID:a11) t6 -> p6 
+[2022-10-06 16:13:14,309] 782 DEBUG FILE_LOGGER:  ... Arc created: (ID:a288) p15 -> t6 
+[2022-10-06 16:13:14,310] 783 DEBUG FILE_LOGGER:  ... Arc created: (ID:a263) p2 -> t4 
+[2022-10-06 16:13:14,310] 783 DEBUG FILE_LOGGER:  ... Arc created: (ID:a17) p2 -> t4 
+[2022-10-06 16:13:14,310] 783 DEBUG FILE_LOGGER:  ... Arc created: (ID:a281) t4 -> p9 
+[2022-10-06 16:13:14,310] 783 DEBUG FILE_LOGGER:  ... Arc created: (ID:a276) t4 -> p11 
+[2022-10-06 16:13:14,310] 783 DEBUG FILE_LOGGER:  ... Arc created: (ID:a22) p2 -> t4 
+[2022-10-06 16:13:14,311] 784 DEBUG FILE_LOGGER:  ... Arc created: (ID:a278) t4 -> p3 
+[2022-10-06 16:13:14,371] 844 DEBUG EDITOR_LOGGER: Net updated. (2 ms)
+[2022-10-06 16:13:14,374] 847 DEBUG EDITOR_LOGGER: Net updated. (2 ms)
+[2022-10-06 16:13:14,374] 847 DEBUG FILE_LOGGER: ##### END PNML IMPORT Version (1.3.2) ##### (341 ms)
+[2022-10-06 16:13:14,376] 849  INFO CONFIG_LOGGER: Setting current working directory: C:\Users\palma\Documents\projects\va_incident_mng\exploration\src\data
+[2022-10-06 16:13:14,376] 849  INFO FILE_LOGGER: Petrinet loaded from file: C:\Users\palma\Documents\projects\va_incident_mng\exploration\src\data\simple_model.pnml
+[2022-10-06 16:14:02,064] 48537 DEBUG EDITOR_LOGGER: Net updated. (3 ms)
+[2022-10-06 16:14:05,920] 52393 DEBUG EDITOR_LOGGER: Net updated. (3 ms)
+[2022-10-06 16:14:09,048] 55521 DEBUG EDITOR_LOGGER: Net updated. (2 ms)
+[2022-10-06 16:14:09,094] 55567 DEBUG EDITOR_LOGGER: Net updated. (6 ms)
+[2022-10-06 16:14:16,281] 62754 DEBUG FILE_LOGGER: ##### START PNML EXPORT #####
+[2022-10-06 16:14:16,296] 62769 DEBUG FILE_LOGGER:    ... Setting InnerTransitions for Operator (ID:t4)
+[2022-10-06 16:14:16,299] 62772 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:14:16,300] 62773 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_4) set
+[2022-10-06 16:14:16,300] 62773 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:14:16,300] 62773 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_3) set
+[2022-10-06 16:14:16,300] 62773 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:14:16,300] 62773 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_2) set
+[2022-10-06 16:14:16,301] 62774 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:14:16,301] 62774 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_1) set
+[2022-10-06 16:14:16,301] 62774 DEBUG FILE_LOGGER:    ... InnerTransitions set.
+[2022-10-06 16:14:16,301] 62774 DEBUG FILE_LOGGER:    ... Place (ID:p1) set
+[2022-10-06 16:14:16,301] 62774 DEBUG FILE_LOGGER:    ... Transition (ID:t5) set
+[2022-10-06 16:14:16,302] 62775 DEBUG FILE_LOGGER:    ... Place (ID:p2) set
+[2022-10-06 16:14:16,302] 62775 DEBUG FILE_LOGGER:    ... Setting InnerTransitions for Operator (ID:t6)
+[2022-10-06 16:14:16,302] 62775 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:14:16,302] 62775 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_4) set
+[2022-10-06 16:14:16,302] 62775 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:14:16,302] 62775 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_3) set
+[2022-10-06 16:14:16,302] 62775 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:14:16,302] 62775 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_2) set
+[2022-10-06 16:14:16,302] 62775 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:14:16,302] 62775 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_1) set
+[2022-10-06 16:14:16,303] 62776 DEBUG FILE_LOGGER:    ... InnerTransitions set.
+[2022-10-06 16:14:16,303] 62776 DEBUG FILE_LOGGER:    ... Place (ID:p3) set
+[2022-10-06 16:14:16,303] 62776 DEBUG FILE_LOGGER:    ... Transition (ID:t7) set
+[2022-10-06 16:14:16,303] 62776 DEBUG FILE_LOGGER:    ... Place (ID:p4) set
+[2022-10-06 16:14:16,303] 62776 DEBUG FILE_LOGGER:    ... Place (ID:p5) set
+[2022-10-06 16:14:16,303] 62776 DEBUG FILE_LOGGER:    ... Transition (ID:t9) set
+[2022-10-06 16:14:16,304] 62777 DEBUG FILE_LOGGER:    ... Place (ID:p6) set
+[2022-10-06 16:14:16,304] 62777 DEBUG FILE_LOGGER:    ... Place (ID:p7) set
+[2022-10-06 16:14:16,304] 62777 DEBUG FILE_LOGGER:    ... Place (ID:p8) set
+[2022-10-06 16:14:16,304] 62777 DEBUG FILE_LOGGER:    ... Place (ID:p9) set
+[2022-10-06 16:14:16,304] 62777 DEBUG FILE_LOGGER:    ... Place (ID:p10) set
+[2022-10-06 16:14:16,304] 62777 DEBUG FILE_LOGGER:    ... Place (ID:p12) set
+[2022-10-06 16:14:16,304] 62777 DEBUG FILE_LOGGER:    ... Place (ID:p11) set
+[2022-10-06 16:14:16,304] 62777 DEBUG FILE_LOGGER:    ... Transition (ID:t10) set
+[2022-10-06 16:14:16,304] 62777 DEBUG FILE_LOGGER:    ... Place (ID:p13) set
+[2022-10-06 16:14:16,305] 62778 DEBUG FILE_LOGGER:    ... Place (ID:p15) set
+[2022-10-06 16:14:16,305] 62778 DEBUG FILE_LOGGER:    ... Transition (ID:t13) set
+[2022-10-06 16:14:16,305] 62778 DEBUG FILE_LOGGER:    ... Transition (ID:t1) set
+[2022-10-06 16:14:16,305] 62778 DEBUG FILE_LOGGER:    ... Transition (ID:t2) set
+[2022-10-06 16:14:16,305] 62778 DEBUG FILE_LOGGER:    ... Transition (ID:t3) set
+[2022-10-06 16:14:16,305] 62778 DEBUG FILE_LOGGER:    ... Arc (ID:a261( p1 -> t1) set
+[2022-10-06 16:14:16,306] 62779 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,306] 62779 DEBUG FILE_LOGGER:    ... Arc (ID:a262( t1 -> p2) set
+[2022-10-06 16:14:16,306] 62779 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,306] 62779 DEBUG FILE_LOGGER:    ... Arc (ID:a10( t5 -> p12) set
+[2022-10-06 16:14:16,306] 62779 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,306] 62779 DEBUG FILE_LOGGER:    ... Arc (ID:a286( t13 -> p13) set
+[2022-10-06 16:14:16,307] 62780 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,307] 62780 DEBUG FILE_LOGGER:    ... Arc (ID:a269( t9 -> p10) set
+[2022-10-06 16:14:16,307] 62780 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,307] 62780 DEBUG FILE_LOGGER:    ... Arc (ID:a287( t10 -> p15) set
+[2022-10-06 16:14:16,307] 62780 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,307] 62780 DEBUG FILE_LOGGER:    ... Arc (ID:a266( p6 -> t7) set
+[2022-10-06 16:14:16,307] 62780 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,307] 62780 DEBUG FILE_LOGGER:    ... Arc (ID:a267( t7 -> p7) set
+[2022-10-06 16:14:16,307] 62780 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,307] 62780 DEBUG FILE_LOGGER:    ... Arc (ID:a273( p11 -> t13) set
+[2022-10-06 16:14:16,307] 62780 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,307] 62780 DEBUG FILE_LOGGER:    ... Arc (ID:a270( p10 -> t10) set
+[2022-10-06 16:14:16,308] 62781 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,308] 62781 DEBUG FILE_LOGGER:    ... Arc (ID:a271( p9 -> t9) set
+[2022-10-06 16:14:16,308] 62781 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,308] 62781 DEBUG FILE_LOGGER:    ... Arc (ID:a3( p3 -> t3) set
+[2022-10-06 16:14:16,308] 62781 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,308] 62781 DEBUG FILE_LOGGER:    ... Arc (ID:a6( p4 -> t2) set
+[2022-10-06 16:14:16,308] 62781 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,308] 62781 DEBUG FILE_LOGGER:    ... Arc (ID:a7( t3 -> p5) set
+[2022-10-06 16:14:16,308] 62781 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,308] 62781 DEBUG FILE_LOGGER:    ... Arc (ID:a8( t2 -> p8) set
+[2022-10-06 16:14:16,308] 62781 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,308] 62781 DEBUG FILE_LOGGER:    ... Arc (ID:a9( p8 -> t5) set
+[2022-10-06 16:14:16,308] 62781 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,309] 62782 DEBUG FILE_LOGGER:    ... Arc (ID:a1( t6_op_1 -> p6) set
+[2022-10-06 16:14:16,309] 62782 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,309] 62782 DEBUG FILE_LOGGER:    ... Arc (ID:a2( p13 -> t6_op_1) set
+[2022-10-06 16:14:16,309] 62782 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,309] 62782 DEBUG FILE_LOGGER:    ... Arc (ID:a13( t6_op_4 -> p6) set
+[2022-10-06 16:14:16,309] 62782 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,309] 62782 DEBUG FILE_LOGGER:    ... Arc (ID:a12( p12 -> t6_op_4) set
+[2022-10-06 16:14:16,309] 62782 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,309] 62782 DEBUG FILE_LOGGER:    ... Arc (ID:a5( p5 -> t6_op_2) set
+[2022-10-06 16:14:16,309] 62782 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,309] 62782 DEBUG FILE_LOGGER:    ... Arc (ID:a15( t6_op_3 -> p6) set
+[2022-10-06 16:14:16,309] 62782 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,310] 62783 DEBUG FILE_LOGGER:    ... Arc (ID:a6( t6_op_2 -> p6) set
+[2022-10-06 16:14:16,310] 62783 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,310] 62783 DEBUG FILE_LOGGER:    ... Arc (ID:a14( p15 -> t6_op_3) set
+[2022-10-06 16:14:16,310] 62783 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,310] 62783 DEBUG FILE_LOGGER:    ... Arc (ID:a21( p2 -> t4_op_2) set
+[2022-10-06 16:14:16,310] 62783 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,310] 62783 DEBUG FILE_LOGGER:    ... Arc (ID:a2( t4_op_4 -> p4) set
+[2022-10-06 16:14:16,310] 62783 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,310] 62783 DEBUG FILE_LOGGER:    ... Arc (ID:a26( p2 -> t4_op_3) set
+[2022-10-06 16:14:16,310] 62783 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,310] 62783 DEBUG FILE_LOGGER:    ... Arc (ID:a5( p2 -> t4_op_4) set
+[2022-10-06 16:14:16,310] 62783 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,311] 62784 DEBUG FILE_LOGGER:    ... Arc (ID:a25( t4_op_3 -> p3) set
+[2022-10-06 16:14:16,311] 62784 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,311] 62784 DEBUG FILE_LOGGER:    ... Arc (ID:a16( p2 -> t4_op_1) set
+[2022-10-06 16:14:16,311] 62784 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,311] 62784 DEBUG FILE_LOGGER:    ... Arc (ID:a19( t4_op_1 -> p9) set
+[2022-10-06 16:14:16,311] 62784 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,311] 62784 DEBUG FILE_LOGGER:    ... Arc (ID:a20( t4_op_2 -> p11) set
+[2022-10-06 16:14:16,311] 62784 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:14:16,328] 62801 DEBUG FILE_LOGGER: ##### END PNML EXPORT ##### (47 ms)
+[2022-10-06 16:14:16,328] 62801  INFO FILE_LOGGER: Petrinet saved in file: C:\Users\palma\Documents\projects\va_incident_mng\exploration\src\data\simple_model.pnml
+[2022-10-06 16:14:16,328] 62801  INFO CONFIG_LOGGER: Setting current working directory: null
+[2022-10-06 16:14:56,392] 102865 DEBUG EDITOR_LOGGER: Net updated. (1 ms)
+[2022-10-06 16:14:56,438] 102911 DEBUG EDITOR_LOGGER: Net updated. (2 ms)
+[2022-10-06 16:15:01,935] 108408 DEBUG EDITOR_LOGGER: Net updated. (2 ms)
+[2022-10-06 16:15:01,955] 108428 DEBUG QUALANALYSIS_LOGGER: PT Handle Pairs calculated. (36 ms)
+[2022-10-06 16:15:01,955] 108428 DEBUG QUALANALYSIS_LOGGER: TP Handle Pairs calculated. (13 ms)
+[2022-10-06 16:15:01,965] 108438  INFO FILE_LOGGER: Local WoPeD analysis started.
+[2022-10-06 16:15:09,238] 115711 DEBUG FILE_LOGGER: ##### START PNML EXPORT #####
+[2022-10-06 16:15:09,239] 115712 DEBUG FILE_LOGGER:    ... Setting InnerTransitions for Operator (ID:t4)
+[2022-10-06 16:15:09,239] 115712 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:15:09,239] 115712 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_4) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_3) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_5) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_2) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_1) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... InnerTransitions set.
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Place (ID:p1) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Transition (ID:t5) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Place (ID:p2) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Setting InnerTransitions for Operator (ID:t6)
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_5) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_4) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_3) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_2) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_1) set
+[2022-10-06 16:15:09,240] 115713 DEBUG FILE_LOGGER:    ... InnerTransitions set.
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Place (ID:p3) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Transition (ID:t7) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Place (ID:p4) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Place (ID:p5) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Transition (ID:t9) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Place (ID:p6) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Place (ID:p7) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Place (ID:p8) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Place (ID:p9) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Place (ID:p10) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Place (ID:p12) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Place (ID:p11) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Transition (ID:t10) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Place (ID:p14) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Place (ID:p13) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Place (ID:p15) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Transition (ID:t13) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Transition (ID:t1) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Transition (ID:t2) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Transition (ID:t3) set
+[2022-10-06 16:15:09,241] 115714 DEBUG FILE_LOGGER:    ... Arc (ID:a261( p1 -> t1) set
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER:    ... Arc (ID:a262( t1 -> p2) set
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER:    ... Arc (ID:a10( t5 -> p12) set
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER:    ... Arc (ID:a286( t13 -> p13) set
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER:    ... Arc (ID:a269( t9 -> p10) set
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER:    ... Arc (ID:a287( t10 -> p15) set
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER:    ... Arc (ID:a266( p6 -> t7) set
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER:    ... Arc (ID:a267( t7 -> p7) set
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER:    ... Arc (ID:a273( p11 -> t13) set
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER:    ... Arc (ID:a270( p10 -> t10) set
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER:    ... Arc (ID:a271( p9 -> t9) set
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER:    ... Arc (ID:a3( p3 -> t3) set
+[2022-10-06 16:15:09,242] 115715 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER:    ... Arc (ID:a6( p4 -> t2) set
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER:    ... Arc (ID:a7( t3 -> p5) set
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER:    ... Arc (ID:a8( t2 -> p8) set
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER:    ... Arc (ID:a9( p8 -> t5) set
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER:    ... Arc (ID:a1( t6_op_1 -> p6) set
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER:    ... Arc (ID:a2( p13 -> t6_op_1) set
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER:    ... Arc (ID:a21( t6_op_5 -> p6) set
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER:    ... Arc (ID:a13( t6_op_4 -> p6) set
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER:    ... Arc (ID:a12( p12 -> t6_op_4) set
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER:    ... Arc (ID:a5( p5 -> t6_op_2) set
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER:    ... Arc (ID:a15( t6_op_3 -> p6) set
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,243] 115716 DEBUG FILE_LOGGER:    ... Arc (ID:a6( t6_op_2 -> p6) set
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER:    ... Arc (ID:a14( p15 -> t6_op_3) set
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER:    ... Arc (ID:a20( p14 -> t6_op_5) set
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER:    ... Arc (ID:a21( p2 -> t4_op_2) set
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER:    ... Arc (ID:a2( t4_op_4 -> p4) set
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER:    ... Arc (ID:a26( p2 -> t4_op_3) set
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER:    ... Arc (ID:a5( p2 -> t4_op_4) set
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER:    ... Arc (ID:a25( t4_op_3 -> p3) set
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER:    ... Arc (ID:a17( t4_op_5 -> p14) set
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER:    ... Arc (ID:a16( p2 -> t4_op_1) set
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER:    ... Arc (ID:a19( t4_op_1 -> p9) set
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER:    ... Arc (ID:a18( p2 -> t4_op_5) set
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER:    ... Arc (ID:a20( t4_op_2 -> p11) set
+[2022-10-06 16:15:09,244] 115717 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:09,249] 115722 DEBUG FILE_LOGGER: ##### END PNML EXPORT ##### (11 ms)
+[2022-10-06 16:15:09,249] 115722  INFO FILE_LOGGER: Petrinet saved in file: C:\Users\palma\Documents\projects\va_incident_mng\exploration\src\data\simple_model.pnml
+[2022-10-06 16:15:09,250] 115723  INFO CONFIG_LOGGER: Setting current working directory: null
+[2022-10-06 16:15:20,156] 126629  INFO CONFIG_LOGGER: Setting current working directory: C:\Users\palma\Desktop\
+[2022-10-06 16:15:20,156] 126629 DEBUG FILE_LOGGER: Current working dir is: C:\Users\palma\Desktop\
+[2022-10-06 16:15:20,156] 126629 DEBUG FILE_LOGGER: ##### START PNML EXPORT #####
+[2022-10-06 16:15:20,156] 126629 DEBUG FILE_LOGGER:    ... Setting InnerTransitions for Operator (ID:t4)
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_4) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_3) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_5) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_2) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t4) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Transition (ID:t4_op_1) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... InnerTransitions set.
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Place (ID:p1) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Transition (ID:t5) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Place (ID:p2) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Setting InnerTransitions for Operator (ID:t6)
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_5) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_4) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_3) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_2) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Operator for Transition (ID:t6) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Transition (ID:t6_op_1) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... InnerTransitions set.
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Place (ID:p3) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Transition (ID:t7) set
+[2022-10-06 16:15:20,158] 126631 DEBUG FILE_LOGGER:    ... Place (ID:p4) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Place (ID:p5) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Transition (ID:t9) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Place (ID:p6) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Place (ID:p7) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Place (ID:p8) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Place (ID:p9) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Place (ID:p10) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Place (ID:p12) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Place (ID:p11) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Transition (ID:t10) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Place (ID:p14) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Place (ID:p13) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Place (ID:p15) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Transition (ID:t13) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Transition (ID:t1) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Transition (ID:t2) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Transition (ID:t3) set
+[2022-10-06 16:15:20,159] 126632 DEBUG FILE_LOGGER:    ... Arc (ID:a261( p1 -> t1) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a262( t1 -> p2) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a10( t5 -> p12) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a286( t13 -> p13) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a269( t9 -> p10) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a287( t10 -> p15) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a266( p6 -> t7) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a267( t7 -> p7) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a273( p11 -> t13) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a270( p10 -> t10) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a271( p9 -> t9) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a3( p3 -> t3) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a6( p4 -> t2) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a7( t3 -> p5) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a8( t2 -> p8) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a9( p8 -> t5) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a1( t6_op_1 -> p6) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a2( p13 -> t6_op_1) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a21( t6_op_5 -> p6) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER:    ... Arc (ID:a13( t6_op_4 -> p6) set
+[2022-10-06 16:15:20,160] 126633 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a12( p12 -> t6_op_4) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a5( p5 -> t6_op_2) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a15( t6_op_3 -> p6) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a6( t6_op_2 -> p6) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a14( p15 -> t6_op_3) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a20( p14 -> t6_op_5) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a21( p2 -> t4_op_2) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a2( t4_op_4 -> p4) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a26( p2 -> t4_op_3) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a5( p2 -> t4_op_4) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a25( t4_op_3 -> p3) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a17( t4_op_5 -> p14) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a16( p2 -> t4_op_1) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a19( t4_op_1 -> p9) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a18( p2 -> t4_op_5) set
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,162] 126635 DEBUG FILE_LOGGER:    ... Arc (ID:a20( t4_op_2 -> p11) set
+[2022-10-06 16:15:20,163] 126636 DEBUG FILE_LOGGER: ... Arc label position: X = 500.0 / Y = 12.0
+[2022-10-06 16:15:20,169] 126642 DEBUG FILE_LOGGER: ##### END PNML EXPORT ##### (13 ms)
+[2022-10-06 16:15:20,169] 126642  INFO FILE_LOGGER: Petrinet saved in file: C:\Users\palma\Desktop\IM-model.pnml
+[2022-10-06 16:15:20,169] 126642  INFO CONFIG_LOGGER: Setting current working directory: C:\Users\palma\Desktop\
+[2022-10-06 16:15:38,583] 145056  INFO CONFIG_LOGGER: Configuration successfully saved to: C:\Users\palma\.WoPeD-3.8.0\WoPeDconfig.xml
+[2022-10-06 16:15:38,583] 145056  INFO GUI_LOGGER: EXIT WoPeD

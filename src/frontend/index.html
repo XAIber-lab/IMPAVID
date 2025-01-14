@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Visual Analytics for Incident Management</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="shortcut icon" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="__d3-radviz.js"></script>
+
+    <script>
+      /* Configurations */
+      const colorTab = { checked: "#ccc", notChecked: "#ddd" };
+      const colorDev = {
+        tot: "grey",
+        //miss: "#bebada", rep: "#fdb462", mism: "#8dd3c7",
+        miss: "#af8dc3",
+        rep: "#f1a340",
+        mism: "#5ab4ac",
+        N: "#80b1d3",
+        A: "#b3de69",
+        W: "#fb8072",
+        R: "#fccde5",
+        C: "#ffffb3",
+      };
+      const colorRectCat = { notChecked: "#e41a1c", checked: "#3182bd" };
+      const fullDateRange = d3.timeDays(
+        new Date(2016, 1, 19),
+        new Date(2017, 2, 19)
+      );
+      const formatTime = d3.timeFormat("%Y-%m-%d");
+      const colorSeverity = {
+        none: "#4dac26",
+        low: "#4dac26",
+        medium: "#ffffbf",
+        high: "#f1b6da",
+        critical: "#d01c8b",
+      };
+      const threshold = { low: 0.37, medium: 0.69, high: 0.89 };
+
+      /* Shared filters */
+      var analysisType = "exploration";
+      var dateRange = [
+        fullDateRange[0],
+        fullDateRange[fullDateRange.length - 1],
+      ];
+      var selectedErrors = {
+        missing: false,
+        repetition: false,
+        mismatch: false,
+      };
+      var selectedActivities = {
+        n: false,
+        a: false,
+        w: false,
+        r: false,
+        c: false,
+      };
+      var fitnessRange = [1, 0];
+      var costRange = [1, 0];
+      var selectedCategories = [];
+      var selectedAssessment = { priority: [], impact: [], urgency: [] };
+
+      var brushViolinSelection = { fitness: [], cost: [] };
+      var brushParallelSelection = { priority: [], impact: [], urgency: [] };
+
+      /* Shared filters parameters */
+      var paramMissing = { N: 0.25, A: 0.25, R: 0.25, C: 0.25 };
+      var paramRepetition = { N: 0.2, A: 0.2, W: 0.2, R: 0.2, C: 0.2 };
+      var paramMismatch = { N: 0.2, A: 0.2, W: 0.2, R: 0.2, C: 0.2 };
+      var paramWeights = { miss: 0.33, rep: 0.33, mism: 0.33 };
+
+      var modelMetrics = [
+        { severity: "low", precision: 0.09, recall: 0.93 },
+        { severity: "medium", precision: 0.83, recall: 0.05 },
+        { severity: "high", precision: 0, recall: 0 },
+        { severity: "critical", precision: 0, recall: 0 },
+      ];
+
+      /* Shared data */
+      var filteredData;
+      async function loadData() {
+        //return await eel.processData()();
+        eel.processData()();
+        // // incidentsData = await d3.csv("outputInc.csv");
+        // // alignmentsData = await d3.csv("output.csv");
+        // return await d3.csv("simpleFull.csv");
+        return await d3.csv("fullOutputFull.csv");
+      }
+    </script>
+
+    <script type="text/javascript" src="script/dataManage.js"></script>
+
+    <script type="text/javascript" src="script/renderMetrics.js"></script>
+    <script type="text/javascript" src="script/renderOverview.js"></script>
+
+    <script type="text/javascript" src="script/renderDeviations.js"></script>
+    <script type="text/javascript" src="script/renderFitness.js"></script>
+    <script type="text/javascript" src="script/renderIncidents.js"></script>
+
+    <script type="text/javascript" src="script/renderPattern.js"></script>
+    <script type="text/javascript" src="script/renderDetails.js"></script>
+
+    <script
+      type="text/javascript"
+      src="script/renderParameterState.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="container_header">
+      <div id="metrics"></div>
+      <div id="image">
+        <p class="titleDev">Reference Incident Management Model</p>
+        <img src="reference_model.svg" />
+      </div>
+      <div id="tab" class="tab">
+        <button id="tabExplore">Exploration analysis</button>
+        <button id="tabParam">Parameters space analysis</button>
+      </div>
+    </div>
+
+    <div id="container_top">
+      <div id="focus">
+        <!-- <p class="titleDev">Trace Variants Analysis</p> -->
+        <div id="focusHeader">
+          <p class="titleDev">Variants Analysis</p>
+        </div>
+        <div id="focusTraces"></div>
+      </div>
+      <div id="context">
+        <p class="titleDev">Temporal Analysis</p>
+        <div id="focusLine"></div>
+        <div id="contextLine"></div>
+      </div>
+    </div>
+
+    <div id="container_middle">
+      <div id="deviation">
+        <div id="legend"></div>
+
+        <div id="containerDev">
+          <p class="titleDev">Deviations analysis</p>
+          <div id="divMissing">
+            <div id="barMissing"></div>
+          </div>
+
+          <div id="divRepetition">
+            <div id="barRepetition"></div>
+          </div>
+
+          <div id="divMismatch">
+            <div id="barMismatch"></div>
+          </div>
+        </div>
+
+        <!-- <div id="containerTop">
+        <p class="titleDev" style="margin: 0;">Incidents with most errors</p>
+        <div id="divTopOne"></div>
+        <div id="divTopTwo"></div>
+        <div id="divTopThree"></div>
+      </div> -->
+
+        <!-- <div id="containerState">
+        <div id="stateDeviations"></div>
+      </div> -->
+      </div>
+
+      <div id="detail">
+        <p class="titleDev">Sequence Analysis Distributed in Time</p>
+        <div id="overviewBar"></div>
+        <div id="containerTraces"></div>
+      </div>
+
+      <!-- <div id="fitness">
+      <p class="titleDev">Fitness and Cost Analysis</p>
+      <div id="fitnessViolin"></div>
+      <div id="fitnessBar"></div>
+
+      <div id="costViolin"></div>
+      <div id="costBar"></div>
+    </div>
+    
+    <div id="incident">
+      <p class="titleDev">Incidents priority analysis</p>
+      <div id="parallelIncidents"></div>
+      <div id="barIncidents"></div>
+    </div> -->
+    </div>
+
+    <div id="container_bottom">
+      <div id="containerState">
+        <p class="titleDev" style="padding-bottom: 15px">
+          Incidents with most errors
+        </p>
+        <div id="stateDeviations"></div>
+      </div>
+
+      <div id="pattern">
+        <p class="titleDev" style="padding-bottom: 15px">
+          Incidents pattern analysis
+        </p>
+        <div id="patternChart"></div>
+      </div>
+
+      <!-- <div id="detail">
+      <div id="overviewBar"></div>
+      <div id="containerTraces"></div>
+    </div> -->
+
+      <div id="fitness">
+        <p class="titleDev" style="padding-bottom: 15px">
+          Fitness and Cost Analysis
+        </p>
+        <div id="fitnessViolin"></div>
+        <div id="fitnessBar"></div>
+
+        <div id="costViolin"></div>
+        <div id="costBar"></div>
+      </div>
+
+      <div id="incident">
+        <p class="titleDev" style="padding-bottom: 15px">
+          Incidents priority analysis
+        </p>
+        <div id="parallelIncidents"></div>
+        <div id="barIncidents"></div>
+      </div>
+    </div>
+
+    <script>
+      loadData().then((data) => {
+        // const alignmentsData = Object.entries(JSON.parse(data[0])).map(entry => {
+        //     return {incident_id: entry[0],
+        //       ...entry[1]
+        //     };
+        //   });
+        // const incidentsData = JSON.parse(data[1]);
+        const fullData = data.map((elem) => {
+          var a = elem.missing.split(",");
+          var b = elem.repetition.split(",");
+          var c = elem.mismatch.split(",");
+          var objMiss = {};
+          var objRep = {};
+          var objMism = {};
+          for (var i = 0; i < b.length; i++) {
+            var n1 = a[i].split(":");
+            var n2 = b[i].split(":");
+            var n3 = c[i].split(":");
+
+            objMiss[n1[0].split("'")[1]] = parseInt(n1[1].split("}")[0]);
+            objRep[n2[0].split("'")[1]] = parseInt(n2[1].split("}")[0]);
+            objMism[n3[0].split("'")[1]] = parseInt(n3[1].split("}")[0]);
+          }
+          return {
+            ...elem,
+            fitness: parseFloat(elem.fitness),
+            costMismatch: parseFloat(elem.costMismatch),
+            costMissing: parseFloat(elem.costMissing),
+            costRepetition: parseFloat(elem.costRepetition),
+            costTotal: parseFloat(elem.costTotal),
+            mismatch: objMism,
+            missing: objMiss,
+            repetition: objRep,
+            totMismatch: parseFloat(elem.totMismatch),
+            totMissing: parseFloat(elem.totMissing),
+            totRepetition: parseFloat(elem.totRepetition),
+            reassignment: parseInt(elem.reassignment),
+            reopen: parseInt(elem.reopen),
+            updates: parseInt(elem.updates),
+          };
+        });
+
+        document.getElementById("tabExplore").style.backgroundColor =
+          colorTab.checked;
+
+        // Rimuovere sotto
+        // removeAllFromExploration();
+        // initializeParameters();
+        initializeExploration();
+
+        /* LISTENER tab buttons */
+        document.getElementById("tabExplore").onclick = function () {
+          document.getElementById("tabExplore").style.backgroundColor =
+            colorTab.checked;
+          document.getElementById("tabParam").style.backgroundColor =
+            colorTab.notChecked;
+
+          removeAllFromParameters();
+          initializeExploration();
+        };
+
+        document.getElementById("tabParam").onclick = function () {
+          document.getElementById("tabParam").style.backgroundColor =
+            colorTab.checked;
+          document.getElementById("tabExplore").style.backgroundColor =
+            colorTab.notChecked;
+
+          removeAllFromExploration();
+          initializeParameters();
+        };
+
+        /* STATE PARAMETERS view */
+        async function initializeParameters() {
+          const ranges = await eel.rangeParams()();
+
+          renderParamSpace(fullData, ranges);
+          // renderParamAnalysis();
+          // writePrecRecall();
+          // renderTraces();
+        }
+
+        /* EXPLORATION view */
+        function initializeExploration() {
+          const devs = ["Missing", "Repetition", "Mismatch"];
+          d3.select("#paramDeviationWeights").remove();
+          devs.map((err) => {
+            d3.select("#paramDeviation" + err).remove();
+          });
+
+          // selectedCategories = [...new Set(incidentsData.map(e => e.category))];
+          // filteredAlignmentsData = alignmentsData;
+          // filteredIncidentsData = incidentsData;
+          selectedCategories = [...new Set(fullData.map((e) => e.category))];
+          filteredData = fullData;
+          // filteredIncidentsData = alignmentsData;
+
+          /* FIRST RENDER: default viz*/
+          // Render top part
+          renderMetrics(fullData);
+          renderLegendError("legend");
+          renderOverviewBlock(fullData);
+
+          // // Render middle part
+          renderDeviationsBlock(fullData);
+          renderFitnessBlock(fullData);
+          renderIncidentsBlock(fullData);
+
+          // // Render bottom part
+          renderPattern();
+          renderDatasetAnalysis(fullData);
+
+          /* LISTENER LEGEND */
+          d3.selectAll(".barErr").on("click", function (d, i) {
+            switch (i) {
+              case "Missing":
+                selectedErrors.missing = !selectedErrors.missing;
+                d3.select(this).style(
+                  "stroke",
+                  selectedErrors.missing ? "black" : "grey"
+                );
+                break;
+              case "Repetition":
+                selectedErrors.repetition = !selectedErrors.repetition;
+                d3.select(this).style(
+                  "stroke",
+                  selectedErrors.repetition ? "black" : "grey"
+                );
+                break;
+              case "Mismatch":
+                selectedErrors.mismatch = !selectedErrors.mismatch;
+                d3.select(this).style(
+                  "stroke",
+                  selectedErrors.mismatch ? "black" : "grey"
+                );
+                break;
+              default:
+                selectedErrors;
+                break;
+            }
+            // combineFilters(alignmentsData, incidentsData);
+            // console.log(filteredAlignmentsData);
+            filterAll(fullData);
+
+            renderMetrics(fullData);
+            renderOverviewBlock(fullData);
+
+            renderDeviationsBlock(fullData);
+            renderFitnessBlock(fullData);
+            renderIncidentsBlock(alignmentsData, incidentsData);
+
+            renderPattern();
+            renderDatasetAnalysis(fullData);
+          });
+
+          d3.selectAll(".barAct").on("click", function (d, i) {
+            switch (i) {
+              case "Detection":
+                selectedActivities.n = !selectedActivities.n;
+                d3.select(this).style(
+                  "stroke",
+                  selectedActivities.n ? "black" : "grey"
+                );
+                break;
+              case "Activation":
+                selectedActivities.a = !selectedActivities.a;
+                d3.select(this).style(
+                  "stroke",
+                  selectedActivities.a ? "black" : "grey"
+                );
+                break;
+              case "Awaiting":
+                selectedActivities.w = !selectedActivities.w;
+                d3.select(this).style(
+                  "stroke",
+                  selectedActivities.w ? "black" : "grey"
+                );
+                break;
+              case "Resolution":
+                selectedActivities.r = !selectedActivities.r;
+                d3.select(this).style(
+                  "stroke",
+                  selectedActivities.r ? "black" : "grey"
+                );
+                break;
+              case "Closure":
+                selectedActivities.c = !selectedActivities.c;
+                d3.select(this).style(
+                  "stroke",
+                  selectedActivities.c ? "black" : "grey"
+                );
+                break;
+              default:
+                selectedActivities;
+                break;
+            }
+            filterAll(fullData);
+
+            renderMetrics(fullData);
+            renderOverviewBlock(fullData);
+
+            renderDeviationsBlock(fullData);
+            renderFitnessBlock(fullData);
+            renderIncidentsBlock(fullData);
+
+            renderPattern();
+            renderDatasetAnalysis(fullData);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

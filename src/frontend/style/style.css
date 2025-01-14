@@ -1,0 +1,218 @@
+ /* Style the tab */
+#tab {
+overflow: hidden;
+/* border: 1px solid #ccc; */
+/* background-color: #f1f1f1; */
+width: 10%;
+border-style: solid; /*todo: eliminare*/
+border-width: 2px; /*todo: eliminare*/
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+background-color: #ccc;
+}
+
+#tabExplore, #tabParam {
+    width: 200px;
+}
+
+
+#container_header, #container_top, #container_middle, #container_bottom {
+    padding: 10px;
+    display: flex;
+}
+
+#container_bottom {
+    position: absolute
+}
+
+/* HEADER BLOCK */
+#metrics {
+    border-style: solid; /*todo: eliminare*/
+    border-width: 2px; /*todo: eliminare*/
+    width: 55%;
+    float: left;
+}
+
+#image {
+    border-style: solid; /*todo: eliminare*/
+    border-width: 2px; /*todo: eliminare*/
+    width: 40%;
+    float: right;
+    text-align: center;
+}
+
+/* OVERVIEW BLOCK */
+#focus {
+    border-style: solid; /*todo: eliminare*/
+    border-width: 2px; /*todo: eliminare*/
+    width: 35%;
+    float: left;
+    height: 250px; /*todo: eliminare*/
+    /* display: grid; */
+    /*clear: both;*/
+    /* overflow-y: scroll; */
+    /* overflow-x: scroll;
+    display: inline-grid; */
+}
+
+#focusTraces {
+    height: 215px;
+    overflow-y: scroll;
+}
+
+#context {
+    border-style: solid; /*todo: eliminare*/
+    border-width: 2px; /*todo: eliminare*/
+    width: 65%;
+    height: 250px; /*todo: eliminare*/
+    float: right;
+}
+
+#focusLine, #contextLine {
+    width: 100%;
+}
+
+/* DEVIATION BLOCK */
+#deviation {
+    width: 35%;
+    display: inline-block;
+}
+
+#legend {
+    border-style: solid; /*todo: eliminare*/
+    border-width: 2px; /*todo: eliminare*/
+    width: 39%;
+    float: left;
+    height: 240px;
+}
+
+.titleDev {
+    font-family: Helvetica;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#containerDev {
+    border-style: solid; /*todo: eliminare*/
+    border-width: 2px; /*todo: eliminare*/
+    float: right;
+    width: 60%;
+    display: table;
+    height: 240px;
+}
+
+#divMissing, #divRepetition, #divMismatch {
+    display: inline-flex;
+    width: 100%;
+}
+
+#barMissing, #barRepetition, #barMismatch {
+    float: right;
+    width: 85%;
+}
+
+#containerTop {
+    float: right;
+    width: 100%;
+    border-style: solid; /*todo: eliminare*/
+    border-width: 2px; /*todo: eliminare*/
+}
+
+#containerState {
+    border-style: solid; /*todo: eliminare*/
+    border-width: 2px; /*todo: eliminare*/
+    /* width: 100%; */
+    width: 380px;
+    height: 566px; /*todo: eliminare*/
+    clear: both;
+    overflow-y: scroll;
+}
+
+.rectDevs {
+    min-width: 20px;
+}
+
+/* FITNESS BLOCK */
+
+#fitness {
+    border-style: solid; /*todo: eliminare*/
+    border-width: 2px; /*todo: eliminare*/
+    width: 33%;
+    display: inline-block;
+    /* height: 530px; todo */
+}
+
+#fitnessViolin, #costViolin {
+    float: left;
+    width: 20%;
+}
+
+#fitnessBar, #costBar {
+    float: right;
+    width: 70%;
+}
+
+/* INCIDENT BLOCK */
+
+#incident {
+    border-style: solid; /*todo: eliminare*/
+    border-width: 2px; /*todo: eliminare*/
+    width: 32%;
+    display: inline-block;
+    /* height: 530px; todo */
+}
+
+#parallelIncidents{
+    width: 50%;
+    float: left;
+}
+
+#barIncidents{
+    width: 50%;
+    float: right;
+}
+
+/* PATTERN BLOCK (radviz) */
+
+#pattern {
+    border-style: solid; /*todo: eliminare*/
+    border-width: 2px; /*todo: eliminare*/
+    width: 500px;
+    display: inline-block;
+    position: relative;
+}
+
+#detail {
+    border-style: solid; /*todo: eliminare*/
+    border-width: 2px; /*todo: eliminare*/
+    width: 65%;
+    height: 240px;
+    display: inline-block;
+}
+
+#containerTraces {
+    overflow-x: scroll;
+    /* height: 70px; */
+    width: 1500px;
+    margin-left: 60px;
+}
+
