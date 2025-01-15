@@ -1,8 +1,15 @@
-## Visually Supporting the Assessment of the Incident Management Process
+## IMPAVID: A Visual Analytics solution for Incident Management Process compliance assessment
 
 ### Abstract
-
-Incident Management (IM) is the process to prevent, protect, and react to incidents affecting an organization and should be well-defined to be prepared in case of alerts. To this aim, security standards define guidelines to manage the incidents and the organizations should comply with them to properly set up a secure-by-design process. Assessing whether an organization is compliant or not with security standards requires a big effort as the main methodologies are based on manual analysis and leveraging automatic approaches to support human decisions is challenging. To facilitate this task, we design IMPAVID, a visual analytics solution to support the assessment of IM process compliance through process mining. The aim is to increase the level of awareness of the security assessor to support her in making informed decisions about actions to improve IM process compliance with regulatory and technical standards. We evaluate the proposed system through a usage scenario based on a publicly available dataset containing data from a real IM log of an IT company.
+The Incident Management Process (IMP) is crucial to prevent, protect against, and respond to security incidents that impact an organization. 
+To ensure readiness for potential alerts, the IMP must be compliant with security standards, which provide guidelines for managing such incidents, and organizations are expected to adhere to these standards to establish a secure-by-design approach.
+Evaluating an organization’s compliance with security standards is often labor-intensive, as traditional methods rely heavily on manual analysis. Incorporating automated approaches to aid decision-making presents additional challenges such as data interpretation and correlation.
+To address these challenges, we present IMPAVID, a visual analytics solution designed to support the assessment of IMP compliance through process-centric techniques. IMPAVID aims to enhance the security assessor’s awareness, enabling them to make informed decisions about improving the IMP alignment with regulatory and technical standards.
+To ensure the context-awareness of these techniques, they often rely on parametric non-compliance cost functions, that provide a valuable solution for fine-grained assessments.
+On the other hand, they introduce additional challenges related to the effort necessary for security assessors to determine suitable parameter configurations.
+Thus, we extend the IMPAVID system with additional requirements and a visual environment to support parameter configuration during IMP compliance assessment.
+We validate our system using a comprehensive case study based on a publicly available dataset, which includes real IMP log data from an IT company.
+It shows the capabilities of the system to perform IMP compliance assessment while also configuring the parameters of a compliance cost model.
 
 ### Link to the paper and demo video
 
