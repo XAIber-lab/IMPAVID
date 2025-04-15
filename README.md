@@ -13,7 +13,9 @@ It shows the capabilities of the system to perform IMP compliance assessment whi
 
 ### Link to the paper and demo video
 
-https://diglib.eg.org/handle/10.2312/eurova20241116
+A simple demo video is available [here](https://diglib.eg.org/handle/10.2312/eurova20241116).
+
+An extended demo video is available [here](https://github.com/XAIber-lab/IMPAVID/blob/main/ExtendedDemo.7z).
 
 ### Installation Requirements
 
